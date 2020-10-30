@@ -28,7 +28,7 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "start": "ts-node src/index.ts",
+    "start": "node dist/index",
     "build": "tsc",
     "seed:config": "ts-node ./node_modules/typeorm-seeding/dist/cli.js config",
     "seed:run": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
