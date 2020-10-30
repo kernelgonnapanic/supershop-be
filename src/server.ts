@@ -2,7 +2,6 @@ import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import logger from "loglevel";
 import { createConnection } from "typeorm";
-
 import { getRoutes } from "./routes";
 
 async function startServer({ port = process.env.PORT || 3001 } = {}) {

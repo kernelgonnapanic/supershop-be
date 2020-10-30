@@ -3,6 +3,9 @@
   "engines": {
     "node": "12.18.2"
   },
+  "author": {
+    "name": "kernelgonnapanic"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
