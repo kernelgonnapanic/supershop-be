@@ -1,11 +1,14 @@
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
+import cors from "cors";
+
 import logger from "loglevel";
 import { createConnection } from "typeorm";
 import { getRoutes } from "./routes";
 
 async function startServer({ port = process.env.PORT || 3001 } = {}) {
   const app = express();
+  app.use(cors())
   app.use("/api", getRoutes());
   app.use(errorMiddleware);
 
